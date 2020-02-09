@@ -1,7 +1,5 @@
 body{
-    background-image: url(cover.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:#87CEEA;
 }
 .head .image img{
     margin-top: 10px;
@@ -30,6 +28,7 @@ body{
 .login-form-1 h3{
     text-align: center;
     color: #333;
+    margin-bottom: 50px;
 }
 .login-form-2{
     padding: 5%;
@@ -38,6 +37,9 @@ body{
 }
 .login-form-2 h3{
     text-align: center;
+    color: #fff;
+}
+.login-form-2 label{
     color: #fff;
 }
 .login-container form{
@@ -51,23 +53,24 @@ body{
     border: none;
     cursor: pointer;
 }
-.login-form-1 .btnSubmit{
-    font-weight: 600;
-    color: #fff;
-    background-color: #0062cc;
-}
 .login-form-2 .btnSubmit{
     font-weight: 600;
     color: #0062cc;
     background-color: #fff;
+    margin-top: 20px;
 }
-.login-form-2 .ForgetPwd{
+.login-form-1 .menuTable{
+    width: 100%;
+    margin: auto;
+}
+.login-form-1 .menuTable th,td{
+    font-size: 22px;
+}
+.login-form-2 .orderTable{
+    width: 100%;
+    margin: auto;
     color: #fff;
-    font-weight: 600;
-    text-decoration: none;
 }
-.login-form-1 .ForgetPwd{
-    color: #0062cc;
-    font-weight: 600;
-    text-decoration: none;
+.login-form-2 .shortBox{
+    width: 80px;
 }

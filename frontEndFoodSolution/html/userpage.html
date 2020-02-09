@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloudfactory Canteen</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="userpage.css">
+<!------ Include the above in your HEAD tag ---------->
+<body>
+  <div class="container head">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 image">
+        <img src="cloudfactory.png">
+        <p>Welcome to Cloudfactory Canteen</p>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+                    <h3>Today's Menu</h3>
+                    <table class="menuTable">
+                      <tr>
+                        <th>Items</th>
+                        <th>Price</th>
+                      </tr>
+                      <tr>
+                        <td>Buff Momo</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>Chowmein</td>
+                        <td>80</td>
+                      </tr>
+                      <tr>
+                        <td>Samosa Curry</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Puri Tarkari</td>
+                        <td>45</td>
+                      </tr>
+                      <tr>
+                        <td>Fry Rice</td>
+                        <td>80</td>
+                      </tr>
+                    </table>
+                </div>
+                <div class="col-md-6 login-form-2">
+                    <h3>Place your Order Here</h3>
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                            <input type="text" class="form-control" placeholder="Cloudfactory email *" value="" />
+                        </div>
+                    <table class="orderTable">
+                      <tr>
+                        <th>Items</th>
+                        <th>Quantity</th>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="order1" value="Buff Momo">
+                          <label for "order1">Buff Momo</label></td>
+                        <td>
+                          <input type="number" class="form-control shortBox" value="0" min="0" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="order2" value="Chowmein">
+                          <label for "order2">Chowmein</label></td>
+                        <td><input type="number" class="form-control shortBox" value="0" min="0" /></td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="order3" value="Samosa Curry">
+                          <label for "order3">Samosa Curry</label></td>
+                        <td>
+                            <input type="number" class="form-control shortBox" value="0" min="0" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="order4" value="Puri Tarkari">
+                          <label for "order4">Puri Tarkari</label></td>
+                        <td>
+                            <input type="number" class="form-control shortBox" value="0" min="0" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" name="order5" value="Fry Rice">
+                          <label for "order5">Fry Rice</label></td>
+                        <td>
+                            <input type="number" class="form-control shortBox" value="0" min="0" />
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Order" />
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+      </body>
+    </head>
