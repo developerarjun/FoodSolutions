@@ -8,6 +8,10 @@ body{
     margin-right: auto;
     width: 30%;
 }
+.head .image h4{
+    color: #0062cc;
+    text-align: center;
+}
 .head .image p{
     margin-top: 10px;
     text-align: center;
