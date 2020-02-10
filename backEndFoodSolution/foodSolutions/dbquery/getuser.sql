@@ -1,10 +1,22 @@
-CREATE PROCEDURE getLoginAdmin(@username varchar(100),@password text) 
+CREATE PROCEDURE ins_menu(@menuname varchar(100),@price float,@isavailable bit,@stock varchar(50)) 
 AS  
 BEGIN  
-    Select a.user_name,b.full_name from np_profile_admin  b INNER JOIN np_admin_login a 
-	ON b._id = a.person_id_profile
-	where a.user_name = @username and 
-	a.password = @password and 
-	b.is_active = 1 and
-	a.is_active = 1;  
+    INSERT into np_food_menu (
+					_id,
+					menu_name,
+					price,
+					is_available,
+					entry_by,
+					entry_date,
+					quantity
+	)values
+	(
+		select ISNULL(max(_id),0)+1 from np_food_menu,
+		@menuname,
+		@price,
+		@isavailable,
+		'Canteen Admin',
+		getdate(),
+		@stock
+	)
 END  

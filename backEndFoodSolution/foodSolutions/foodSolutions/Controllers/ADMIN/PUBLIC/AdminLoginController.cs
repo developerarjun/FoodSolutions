@@ -17,6 +17,8 @@ namespace foodSolutions.Controllers.ADMIN.PUBLIC
         public AdminLoginController(IAdminLoginServices services) {
             _services = services;
         }
+        public AdminLoginController() { 
+        }
         [HttpPost]
         public ActionResult<AdminLogin> LoginIn(AdminLogin admin) {
             var adminLogin = _services.LoginIn(admin);
@@ -27,17 +29,6 @@ namespace foodSolutions.Controllers.ADMIN.PUBLIC
             }
             return NotFound();
         }
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
-        {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-               
-            })
-            .ToArray();
-        }
+        
     }
 }

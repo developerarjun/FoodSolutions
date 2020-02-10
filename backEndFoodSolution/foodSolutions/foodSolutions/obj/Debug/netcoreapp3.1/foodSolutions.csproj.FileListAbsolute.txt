@@ -107,10 +107,10 @@ F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netco
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\obj\Debug\netcoreapp3.1\foodSolutions.csprojAssemblyReference.cache
-F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\obj\Debug\netcoreapp3.1\foodSolutions.MvcApplicationPartsAssemblyInfo.cache
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\FoodSolutions\backEndFoodSolution\foodSolutions\foodSolutions\obj\Debug\netcoreapp3.1\foodSolutions.MvcApplicationPartsAssemblyInfo.cache
