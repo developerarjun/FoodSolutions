@@ -1,0 +1,80 @@
+body{
+    background:#87CEEA;
+}
+.head .image img{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.head .image h4{
+    color: #0062cc;
+    text-align: center;
+}
+.head .image p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #0062cc;
+    font-weight: bolder;
+}
+
+.login-container{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    background: #87CEEB;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+.login-form-2{
+    padding: 5%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-form-2 label{
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.login-form-1 .menuTable{
+    width: 100%;
+    margin: auto;
+}
+.login-form-1 .menuTable th,td{
+    font-size: 22px;
+}
+.login-form-2 .orderTable{
+    width: 100%;
+    margin: auto;
+    color: #fff;
+}
+.login-form-2 .shortBox{
+    width: 80px;
+}
