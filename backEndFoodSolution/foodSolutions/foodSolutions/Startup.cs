@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using foodSolutions.Services.ADMIN.PUBLIC;
+using foodSolutions.Services.USER.PUBLIC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +30,8 @@ namespace foodSolutions
             services.AddControllers();
             services.AddSingleton<IAdminLoginServices, AdminLoginServices>();
             services.AddSingleton<IMenuServices, MenuServices>();
+            services.AddSingleton<IUserRegisterServices, UserRegisterServices>();
+            services.AddSingleton<ILoginUserServices, LoginUserServices>();
             services.AddDistributedMemoryCache();
             services.AddSession(options => {
                 options.IdleTimeout = TimeSpan.FromMinutes(245);//You can set Time   
