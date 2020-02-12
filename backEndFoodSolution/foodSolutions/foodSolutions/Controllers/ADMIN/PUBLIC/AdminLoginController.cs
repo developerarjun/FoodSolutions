@@ -17,8 +17,6 @@ namespace foodSolutions.Controllers.ADMIN.PUBLIC
         public AdminLoginController(IAdminLoginServices services) {
             _services = services;
         }
-        public AdminLoginController() { 
-        }
         [HttpPost]
         public ActionResult<AdminLogin> LoginIn(AdminLogin admin) {
             var adminLogin = _services.LoginIn(admin);
