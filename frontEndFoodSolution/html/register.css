@@ -1,0 +1,46 @@
+body{
+    background:#87CEEA;
+}
+.head .image img{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.head .image p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #0062cc;
+    font-weight: bolder;
+}
+
+.login-container{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.register{
+    padding: 5%;
+    background: #87CEEB;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.register h3{
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+.register h5{
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
