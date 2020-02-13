@@ -32,6 +32,7 @@ namespace foodSolutions
             services.AddSingleton<IMenuServices, MenuServices>();
             services.AddSingleton<IUserRegisterServices, UserRegisterServices>();
             services.AddSingleton<ILoginUserServices, LoginUserServices>();
+            services.AddSingleton<IFoodOrdersServices,FoodOrdersServices>();
             services.AddDistributedMemoryCache();
             services.AddSession(options => {
                 options.IdleTimeout = TimeSpan.FromMinutes(245);//You can set Time   
