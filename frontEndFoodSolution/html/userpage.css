@@ -78,3 +78,16 @@ body{
 .login-form-2 .shortBox{
     width: 80px;
 }
+.userWeeklyStats{
+    padding: 5%;
+    background: #87CEEB;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.userWeeklyStats h3{
+    margin:auto;
+    text-align: center;
+}
+.userWeeklyStats .statsTable{
+    margin-top: 30px;
+    width: 100%;
+}
