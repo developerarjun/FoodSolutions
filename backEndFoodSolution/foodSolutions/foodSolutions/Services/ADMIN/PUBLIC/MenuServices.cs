@@ -39,7 +39,7 @@ namespace foodSolutions.Services.ADMIN.PUBLIC
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
                     Menu objATT = new Menu();
-                    objATT._id = Convert.ToInt32(dr["_id"]);
+                    objATT._id = Convert.ToInt32(dr["id"]);
                     objATT.menuName = dr["menu_name"].ToString();
                     objATT.price = Convert.ToDouble(dr["price"]);
                     objATT.stock = dr["quantity"].ToString();

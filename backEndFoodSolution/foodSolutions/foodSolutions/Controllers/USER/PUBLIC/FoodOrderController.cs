@@ -26,5 +26,12 @@ namespace foodSolutions.Controllers.USER.PUBLIC
             if (order != null) return Ok(food);
             return BadRequest();
         }
+        [HttpGet("{userid}")]
+        public ActionResult<List<Orders>> getFoodOrderHistory(string userid)
+        {
+            var order = _services.getFoodHistory(userid);
+            if (order != null) return Ok(order);
+            return BadRequest();
+        }
     }
 }

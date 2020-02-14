@@ -10,7 +10,8 @@ namespace foodSolutions.Model.USER.PUBLIC
         public int id { get; set; }
         public int orderId { get; set; }
         public int foodId { get; set; }
+        public string foodName { get; set; }
         public string quantity {get; set;}
-        public float price { get; set; }
+        public Double price { get; set; }
     }
 }
