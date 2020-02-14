@@ -9,5 +9,6 @@ namespace foodSolutions.Services.USER.PUBLIC
     public interface IFoodOrdersServices
     {
         Orders saveFoodOrder(Orders order);
+        Orders getFoodHistory(string userid);
     }
 }

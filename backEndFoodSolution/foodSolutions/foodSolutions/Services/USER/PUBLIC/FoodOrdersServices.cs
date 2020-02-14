@@ -11,6 +11,56 @@ namespace foodSolutions.Services.USER.PUBLIC
 {
     public class FoodOrdersServices : IFoodOrdersServices
     {
+        public Orders getFoodHistory(string userid)
+        {
+            Orders orders = new Orders();
+            try
+            {
+                DataSet ds = new DataSet();
+                SqlParameter[] param = new SqlParameter[1];
+                param[0] = new SqlParameter("@userid", userid);
+                ds = DBConnectionSQL.gettable("GetFoodHistory", param);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    foreach (DataRow dr in ds.Tables[0].Rows)
+                    {
+                        orders.id = Convert.ToInt32(dr["id"]);
+                        orders.orderBy = dr["email_id"].ToString();
+                        orders.full_name = dr["full_name"].ToString();
+                        orders.is_ready = Convert.ToBoolean(dr["is_ready"]);
+                        orders.orderAt = dr["order_at"].ToString();
+                        orders.totalPrice = Convert.ToDouble(dr["total_price"]);
+                        orders.foodOrders = getFoodOrderDetails(orders.id);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error" + ex.Message);
+            }
+            return orders;
+        }
+        public List<FoodOrders> getFoodOrderDetails(int orderId)
+        {
+            List<FoodOrders> lst = new List<FoodOrders>();
+            DataSet ds = new DataSet();
+            SqlParameter[] param = new SqlParameter[1];
+            param[0] = new SqlParameter("@orderid", orderId);
+            ds = DBConnectionSQL.gettable("GetFoodOrder", param);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    FoodOrders objATT = new FoodOrders();
+                    objATT.foodName = dr["menu_name,"].ToString();
+                    objATT.quantity = dr["quantity"].ToString();
+                    objATT.price = Convert.ToDouble(dr["price"]);
+                    lst.Add(objATT);
+                }
+
+            }
+            return lst;
+        }
         public Orders saveFoodOrder(Orders order)
         {
             SqlConnection conn = DBConnectionSQL.getConnection();

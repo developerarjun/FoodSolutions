@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="foodSolutions" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="foodSolutions20200212112707" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^F:\\FoodSolutions\\backEndFoodSolution\\foodSolutions\\foodSolutions\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>
