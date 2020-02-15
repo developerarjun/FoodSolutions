@@ -44,3 +44,17 @@ table button {
 .custom .price{
   width: 100px;
 }
+.navigation{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.navigation ul li{
+  list-style: none;
+  float: left;
+  padding-left: 25px;
+  padding-right: 30px;
+}
+.navigation ul li a{
+  color: #fff;
+  font-size: 22px;
+}
